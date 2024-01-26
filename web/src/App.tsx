@@ -1,16 +1,17 @@
-import { useState } from 'react'
+import { useState } from "react";
+import { Button } from "./components/ui/button";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
       <div>
         <a href="https://vitejs.dev" target="_blank">
-          Vite
+          <Button>Vite</Button>
         </a>
         <a href="https://react.dev" target="_blank">
-          React
+          <Button variant={"outline"}>React</Button>
         </a>
       </div>
       <h1>Vite + React</h1>
@@ -26,7 +27,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
