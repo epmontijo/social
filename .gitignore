@@ -24,6 +24,7 @@ out/
 build
 dist
 dist-ssr
+drizzle
 
 # Debug
 npm-debug.log*
