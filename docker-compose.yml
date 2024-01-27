@@ -8,3 +8,13 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: youshallnotpass
       POSTGRES_DB: epm
+
+  api:
+    build: api
+    restart: always
+    ports:
+      - 3000:3000
+    env_file:
+      - api/.env
+    depends_on:
+      - db

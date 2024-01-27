@@ -1,0 +1,29 @@
+{
+  "name": "api",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch index.ts",
+    "start": "bun index.ts",
+    "db:generate": "drizzle-kit generate:pg",
+    "db:push": "drizzle-kit push:pg",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^9.3.1",
+    "@fastify/cors": "^9.0.0",
+    "drizzle-orm": "^0.29.3",
+    "fastify": "^4.25.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/pg": "^8.11.0",
+    "drizzle-kit": "^0.20.13"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
